@@ -20,11 +20,20 @@
         <a href="#" class="nav-logo">
             <img src="assets/st.287_logo.png" alt="st287 ខ្ទិះកាហ្វេ" class="nav-logo-img">
         </a>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
+            <li class="nav-close-item">
+                <button class="nav-close" id="nav-close" aria-label="Close menu">✕</button>
+            </li>
             <li><a href="#about">Story</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#visit">Visit</a></li>
         </ul>
+        <div class="nav-overlay" id="nav-overlay"></div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <!-- HERO -->
@@ -171,8 +180,7 @@
                 </div>
                 <div class="loc-item">
                     <a href="https://maps.app.goo.gl/JoHbrSNJWUWsnpwT9" target="_blank" rel="noopener"
-                        class="btn btn-dark">Get directions
-                        →</a>
+                        class="btn btn-dark">Get directions →</a>
                 </div>
             </div>
         </div>
