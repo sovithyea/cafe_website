@@ -9,7 +9,6 @@ window.addEventListener('scroll', () => {
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 const navOverlay = document.getElementById('nav-overlay');
-const navClose = document.getElementById('nav-close');
 
 function openNav() {
   navLinks.classList.add('open');
@@ -24,7 +23,6 @@ function closeNav() {
 }
 
 hamburger.addEventListener('click', openNav);
-navClose.addEventListener('click', closeNav);
 navOverlay.addEventListener('click', closeNav);
 
 document.querySelectorAll('.nav-links a').forEach(link => {

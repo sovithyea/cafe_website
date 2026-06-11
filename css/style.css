@@ -7,11 +7,11 @@
 }
 
 :root {
-    --forest: #204530;
+    --forest: #2D4530;
     /* Dark Pine */
-    --ivory: #DAD3C1;
+    --ivory: #E1DBC9;
     /* Beige Sand */
-    --amber: #564838;
+    --amber: #5E4B3B;
     /* Earth Brown */
     --sage: #6B7884;
     /* Slate Blue Grey */
@@ -300,6 +300,11 @@ nav.scrolled .nav-links a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    img.cup-img {
+        width: 100%;
+        height: auto;
+        opacity: 0.85;
+    }
 }
 
 .steam-group {
@@ -425,7 +430,7 @@ nav.scrolled .nav-links a {
 }
 
 .menu-card:hover {
-    background: rgba(107, 120, 132, 0.07);
+    background: rgba(107, 120, 132, 0.13);
 }
 
 .card-tag {
@@ -539,6 +544,27 @@ nav.scrolled .nav-links a {
 
 .loc-item .btn-dark {
     margin-top: 1.8rem;
+}
+
+/* Map */
+.map-wrap {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.map-wrap iframe {
+    display: block;
+    width: 100%;
+    height: 380px;
+    filter: grayscale(100%) contrast(1.05) brightness(0.92);
+    opacity: 0.8;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.map-wrap iframe:hover {
+    opacity: 1;
+    filter: grayscale(60%) contrast(1.05) brightness(0.95);
 }
 
 /* Footer */
@@ -714,16 +740,6 @@ nav.scrolled .nav-hamburger span {
 
     .nav-links.open {
         transform: translateX(0);
-    }
-
-    .nav-close {
-        background: none;
-        border: none;
-        font-size: 1.1rem;
-        color: var(--charcoal);
-        cursor: pointer;
-        line-height: 1;
-        padding: 0.2rem;
     }
 
     .nav-links li:not(.nav-close-item) {
